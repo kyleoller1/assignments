@@ -15,7 +15,7 @@ The Web Service used for this app is the API from The Movie Database (TMDb), whi
 The overall design of the application is loosely based off of both the [IMDb](https://imdb.com) and [TMDb](https://themoviedb.org) websites, which both provide similar features. I have drawn up three mockups to showcase the design of the three primary pages of the site, along with yellow annotation indicators that correspond to numbered annotations below.
 
 Mockup 1: Homepage
-![Homepage Mockup](./images/Homepage_Mockup.png)
+![Homepage Mockup](./images/Homepage_Mockup.jpg)
 1. Left and Right Borders: These sides of the screen serve as borders, likely an off white color
 2. Header: The header is centered at the top of screen and includes a logo and the title of the site. This should be clickable and direct the user back to the homepage.
 3. Search Bar: The search bar is part of the header, contains a magnifying glass symbol on the left, and allows the user to search for movies.
@@ -25,13 +25,13 @@ Mockup 1: Homepage
 7. More Info Button: Clicking this part of each movie box will take the user to that movie's Movie Details page, displaying more information about the specific title.
 
 Mockup 2: Search Results Page
-![Search Mockup](./images/Search_Mockup.png)
+![Search Mockup](./images/Search_Mockup.jpg)
 1. Search Type: Again, this menu is important to the Search Results Page, as the user can switch the type of search from Movie Titles, which uses `/search/movie/`, to Recommendations, which uses `/movie/{movie_id}/recommendations`.
 2. Results Display Text: This will either say "Movie Results for 'search query'" OR "Recommendations similar to 'Movie Title'" depending on which search type is selected. Note that ideally the Recommendations display will use the full title of the movie instead of just the search query.
 3. Movie Title Boxes: These movie title boxes will contain the same information as those in the Top Rated section of the homepage, but are elongated such that there is one item per row, to distinguish this page as a Search Results page. Also note that the More Info button spans the entire length of the bottom of the box.
 
 Mockup 3: Movie Details Page
-![MovieDetails Mockup](./images/MovieDetails_Mockup.png)
+![MovieDetails Mockup](./images/MovieDetails_Mockup.jpg)
 1. Extra Information: This section is separated by a vertical line and contains extra information about the movie title received from `/movie/{movie_id}`.
 2. Cast and Crew: This section is separated from the above section with a horizontal line and contains extra information about the cast and crew of the movie received by `/movie/{movie_id}/credits`.
 3. Tagline: This section will have the tagline received from `/movie/{movie_id}` in quotes, underneath the information and spanning the entire length.
